@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  --strong-cyan      : hsl(171, 66%, 44%);
+  --light-blue       : hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue     : hsl(201, 11%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Bai Jamjuree' , sans-serif;
+  color: var(--dark-grayish-blue);
+  background: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+}
+
+header {
+  margin: 6rem 14rem;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 2.5rem;
+  width: 100px;
+}
+
+.heading {
+  font-size: 2.5rem;
+}
+
+.about {
+  margin: 1.5rem 0 0;
+  padding: 0 4rem;
+  color: var(--grayish-blue);
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 8rem 0 ;
+}
+
+.ios,
+.mac {
+  text-decoration: none;
+  color: #fff;
+  padding: .8rem 1.5rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ios {
+  background-color: var(--strong-cyan);
+  box-shadow: 2px 2px 2px 2px var(--strong-cyan);
+}
+
+.mac {
+  background-color: var(--light-blue);
+  box-shadow: 2px 2px 2px 2px var(--light-blue);
+}
+
+main {
+  margin: 8rem 16rem 4rem;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.text {
+  margin-top: 1rem;
+  color: var(--grayish-blue);
+}
+
+.part-1 {
+  display: flex;
+  gap: 14rem;
+}
+
+.computer {
+  width: 140%;
+  transform: translateX(-60px);
+}
+
+.card-image {
+  width: fit-content;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.block {
+  padding-right: 8rem;
+  margin-top: 3rem;
+}
+
+.block-heading {
+  color: var(--dark-grayish-blue);
+  margin-bottom: .7rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.block-text {
+  color: var(--grayish-blue);
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+figure {
+  text-align: center;
+}
+
+.devices {
+  width: 60%;
+}
+
+.tools {
+  margin: 2.8rem 0;
+}
+
+.part-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rem;
+  margin: 0 6rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.usage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.usage-image {
+  width: 10%;
+  margin-bottom: 1rem;
+}
+
+.usage-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.usage-text {
+  color: var(--grayish-blue);
+  font-size: .88rem;
+  line-height: 1.6;
+}
+
+.blacklist .usage-text {
+  padding: 0 1rem;
+}
+
+.preview .usage-image {
+  width: 14%;
+}
+
+footer {
+  background-color: rgba(220, 220, 220, 0.304);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+  padding: 2rem 0;
+}
+
+.footer-logo img {
+  width: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  column-gap: 2rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 1260px) {
+  header {
+    margin: 6rem 10rem;
+  }
+  .part-1 {
+    gap: 12rem;
+  }
+  .block {
+    padding-right: 6rem;
+    margin-top: 2rem;
+  }
+  .part-2 {
+    margin: 0 4rem;
+  }
+  .grid-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .block {
+    padding-right: 4rem;
+    margin-top: 1rem;
+  }
+  .part-2 {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin: 1rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .about {
+    padding: 0 .5rem;
+    font-size: .9rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+  main {
+    margin: 8rem 4rem 2rem;
+    line-height: 1.6;
+  }
+  .download {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem;
+  }
+  .ios,
+  .mac {
+    padding: .5rem 6rem;
+  }
+  .part-1 {
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+    gap: 2rem;
+  }
+  .computer {
+    width: 100%;
+    transform: translateX(0);
+  }
+  .block {
+    padding: 0;
+  }
+  .devices {
+    width: 100%;
+  }
+  .part-2 {
+    margin: 2rem;
+    gap: 4rem;
+  }
+  .flex-container {
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+  .grid-container {
+    margin-top: 4rem;
+    grid-template-columns: 1fr;
+  }
+  footer {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    margin-top: 8rem;
+  }
+  nav ul {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
