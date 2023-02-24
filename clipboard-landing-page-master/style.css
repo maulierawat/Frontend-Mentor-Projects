@@ -217,6 +217,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1260px) {
