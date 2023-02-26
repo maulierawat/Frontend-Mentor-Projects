@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins' , sans-serif;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  /* background-position: 250% 1%; */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  padding: 2rem 8rem;
+  max-width: 100%;
+}
+
+.header {
+  margin-bottom: 3rem;
+  margin-top: -1rem;
+  font-weight: 600;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.illustration {
+  width: 100%;
+}
+
+.description {
+  margin-top: 2rem;
+  /* padding-right: 1rem; */
+}
+
+.heading {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.765);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: 'Open Sans' , sans-serif;
+}
+
+.description a {
+  position: absolute;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  padding: .75rem 3rem;
+  /* border: 1px none; */
+  border-radius: 2rem;
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  font-size: 1rem;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.16);
+}
+
+.description a:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  margin-right: -3rem;
+}
+
+.socials {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: .45rem .75rem;
+}
+
+.extra {
+  padding: .4rem .8rem;
+}
+
+.socials:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 768px){
+  
+  body {
+    background-image: url(images/bg-mobile.svg);
+  }
+
+  .container {
+    padding: 2.5rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: .25rem;
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.35rem;
+  }
+
+  .description a {
+    padding: .75rem 5rem;
+    position: relative;
+  }
+
+  .footer {
+    justify-content: center;
+    margin-left: -3rem;
+  }
+
+}
