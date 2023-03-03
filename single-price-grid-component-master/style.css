@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Karla' , sans-serif;
+  font-size: 16px;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(204, 43%, 93%);
+}
+.container {
+  /* max-width: 700px; */
+  border-radius: 5px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.description {
+  background-color: #fff;
+  padding: 3rem;
+  /* padding-right: 3rem; */
+}
+.header {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1.5rem;
+}
+.sub-heading {
+  margin-bottom: 1.5rem;
+}
+.highlight {
+  color: hsl(71, 73%, 54%);
+}
+.text {
+  color: hsl(218, 22%, 67%);
+}
+.new-line {
+  display: block;
+}
+.setting {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+}
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+  padding: 3rem;
+}
+.price {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.light {
+  color: rgba(255, 255, 255, 0.671);
+}
+.offer {
+margin-top: -.5rem;
+}
+.btn {
+  min-width: 100%;
+  border-style: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+  padding: 1rem 0;
+  font-family: 'Karla' , sans-serif;
+  font-weight: 700;
+  font-size: 1.25;
+  margin-top: 2rem;
+}
+.about {
+  background-color:hsla(179, 62%, 43%, 0.662);
+  padding: 3rem;
+  /* padding-right: 5rem; */
+}
+.details {
+  color: rgba(255, 255, 255, 0.772);
+  font-size: 14px;
+  line-height: 1.4;
+  list-style: none;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 90%;
+    margin: 2rem 0;
+  }
+  .setting {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text {
+    line-height: 1.8;
+  }
+  .new-line {
+    display: inline;
+  }
+}
