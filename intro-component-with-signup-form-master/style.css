@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%); 
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url(./images/bg-intro-mobile.png);
+  background-color: var(--red);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 5rem 2rem 1rem;
+  gap: 3rem;
+}
+
+.part1,
+.part2 {
+  text-align: center;
+}
+
+.header {
+  font-size: 1.8rem;
+  font-weight: 700;
+  /* line-height: 2.2rem; */
+  margin-bottom: 1rem;
+}
+
+.trial {
+  background: var(--blue);
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  padding: .5rem 4rem;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-content,
+.button {
+  width: 100%;
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+label {
+  position: relative;
+  /* display: block; */
+}
+
+.form-content {
+  margin-bottom: 2rem;
+  border: 1px solid var(--grayish-blue);
+
+}
+
+.icon {
+  background: url(./images/icon-error.svg) no-repeat;
+  background-position: right;
+  background-size: 20px;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.error-msg {
+  position: absolute;
+  display: block;
+  bottom: 1.5rem;
+  left: 320px;
+  color: #e74c3c;
+}
+
+/* .hidden {
+  display: none;
+} */
+
+.button {
+  background: var(--green);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: .4rem;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.small {
+  color: var(--grayish-blue);
+  font-size: .8rem;
+}
+
+span {
+  color: var(--red);
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    margin: 0 7rem;
+    gap: 8rem;
+  }
+
+  .part1 {
+    justify-self: flex-start;
+    text-align: left;
+  }
+
+  .header {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+
+  .trial {
+    padding: .8rem 2rem;
+    font-size: .8rem;
+  }
+
+  .small {
+    font-size: .6rem;
+  }
+}
